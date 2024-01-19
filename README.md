@@ -29,9 +29,13 @@ pip install mkdocs-simple-blog
 
 ### Preview/ Run Locally
 
-
 ```bash
 mkdocs serve
+```
+
+### Build
+```bash
+mkdocs build
 ```
 
 ## Need Help?
