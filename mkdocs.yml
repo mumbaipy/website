@@ -1,0 +1,40 @@
+site_name: Mumbai Python User Group
+# repo_name: FernandoCelmer/mkdocs-simple-blog
+# repo_url: https://github.com/FernandoCelmer/mkdocs-simple-blog
+# site_url: https://www.fernandocelmer.com/
+# copyright: Fernando Celmer
+
+nav:
+    - Home: index.md
+    - Code of conduct: coc.md
+    # - Setup:
+    #   - nav/setup/components.md
+    #   - nav/setup/colors.md
+    #   - nav/setup/fonts.md
+    #   - nav/setup/logo.md
+    #   - nav/setup/favicon.md
+    # - Development:
+    #   - nav/development/development-guide.md
+    #   - nav/development/release-notes.md
+
+theme:
+  name: simple-blog
+  favicon: assets/favicon.ico
+  logo: logo_mumpy.png
+  theme_style: light
+  site_name_style: bold
+  title_style: normal
+  colors:
+    text: black
+    title: black
+    primary: black
+    background: white
+  components:
+    site_name: true
+    title: false
+    menu: true # can keep true later
+    preview: true
+    footer: true
+
+markdown_extensions:
+  - attr_list
