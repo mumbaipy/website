@@ -1,5 +1,5 @@
 # [MumPy Website](#)
->  Theme taken from [mkdocs-simple-blog](fernandocelmer.github.io/mkdocs-simple-blog/)
+>  Theme taken from [mkdocs-simple-blog](https://github.com/FernandoCelmer/mkdocs-simple-blog)
 
 <!-- ![Image](https://raw.githubusercontent.com/FernandoCelmer/mkdocs-simple-blog/develop/docs/assets/simple-blog.png) -->
 
