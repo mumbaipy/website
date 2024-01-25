@@ -7,6 +7,7 @@ site_name: Mumbai Python User Group
 nav:
     - Home: index.md
     - Code of conduct: coc.md
+    - Team: team.md
     # - Setup:
     #   - nav/setup/components.md
     #   - nav/setup/colors.md
