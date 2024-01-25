@@ -1,5 +1,6 @@
 # [MumPy Website](#)
->  Theme taken from [mkdocs-simple-blog](https://github.com/FernandoCelmer/mkdocs-simple-blog)
+>
+> Theme taken from [mkdocs-simple-blog](https://github.com/FernandoCelmer/mkdocs-simple-blog)
 
 <!-- ![Image](https://raw.githubusercontent.com/FernandoCelmer/mkdocs-simple-blog/develop/docs/assets/simple-blog.png) -->
 
@@ -33,9 +34,43 @@ pip install mkdocs-simple-blog
 mkdocs serve
 ```
 
-### Build
+### Build and deploy to gh pages
+
+1. commit and push all the changes to `main` branch
+
 ```bash
-mkdocs build
+git add . && git commit -m "your commit message"
+git push origin main
+```
+
+2. Checkout/switch to the `gh-pages` branch and rebase with the latest changes of the main branch
+
+```bash
+git switch gh-pages && git rebase origin/main
+```
+
+3. Build your MkDocs site using `mkdocs build` command
+
+4. Navigate to the `/site` directory in your local repository and create a temporary git repository:
+
+```bash
+cd site
+git init
+```
+
+5. Commit the Changes & push to `gh-pages` branch:
+
+```bash
+git add . && git commit -m "Deploy MkDocs Site"
+git push -f https://github.com/mumbaipy/website.git master:gh-pages
+```
+
+6. Clean up:
+
+Once you've successfully pushed to gh-pages, you can delete the temporary Git repository in the /site directory:
+
+```bash
+rm -rf .git
 ```
 
 ## Need Help?
@@ -43,6 +78,7 @@ mkdocs build
 Read the MkDocs [Documentation](https://www.mkdocs.org/getting-started/) :)
 
 ## License
+
 ![GitHub](https://img.shields.io/github/license/FernandoCelmer/mkdocs-simple-blog?style=flat-square)
 
 This project is licensed under the terms of the MIT license.
