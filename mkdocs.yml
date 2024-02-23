@@ -8,6 +8,7 @@ nav:
     - Home: index.md
     - Code of conduct: coc.md
     - Team: team.md
+    - GitHub: https://github.com/mumbaipy/ 
     # - Setup:
     #   - nav/setup/components.md
     #   - nav/setup/colors.md
